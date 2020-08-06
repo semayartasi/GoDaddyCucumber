@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import utils.Driver;
 
-public class SearchAvailable extends Driver {
-    WebDriver driver;
+public class SearchAvailable extends Driver{
+ WebDriver driver;
     @When("^search a domain name and click search button$")
     public void searchADomainNameAndClickSearchButton() {
     //send search keys

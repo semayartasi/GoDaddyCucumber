@@ -9,6 +9,6 @@ Feature:Search Page
       |takenDomainName|
       |Sema |
 
-#       |Turkey |
+#      |Turkey |
 
 

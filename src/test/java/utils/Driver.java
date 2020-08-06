@@ -14,6 +14,7 @@ public class Driver {
         if(driver==null){
             WebDriverManager.chromedriver().setup(); // this line is for System.setproperty
             driver = new ChromeDriver();
+
         }
 
         return driver;

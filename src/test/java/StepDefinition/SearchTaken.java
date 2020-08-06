@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.Driver;
 
-public class SearchTaken extends Driver {
+public class SearchTaken extends Driver{
     WebDriver driver;
     @Then("^search a \"([^\"]*)\" and click search button$")
     public void searchAAndClickSearchButton(String takenDomainName) {
