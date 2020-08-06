@@ -1,13 +1,12 @@
 package StepDefinition;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import org.testng.Assert;
-import utils.BaseStaticDriver;
+import org.openqa.selenium.WebDriver;
+import utils.Driver;
 
-public class SearchTaken extends BaseStaticDriver {
+public class SearchTaken extends Driver {
+    WebDriver driver;
     @Then("^search a \"([^\"]*)\" and click search button$")
     public void searchAAndClickSearchButton(String takenDomainName) {
         //send search keys

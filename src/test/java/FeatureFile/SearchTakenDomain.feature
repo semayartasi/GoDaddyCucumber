@@ -8,6 +8,7 @@ Feature:Search Page
     Examples:
       |takenDomainName|
       |Sema |
-       |Turkey |
+
+#       |Turkey |
 
 

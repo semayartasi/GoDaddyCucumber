@@ -1,18 +1,21 @@
 package StepDefinition;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import utils.BaseStaticDriver;
+import utils.Driver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Login extends BaseStaticDriver {
+public class Login extends Driver  {
+    WebDriver driver;
+
     @Given("^Navigate to Website$")
     public void navigateToWebsite() {
+        driver = Driver.getDriver();
         driver.get("https://www.godaddy.com/partners/domain-investors");
         driver.manage().window().maximize();
     }

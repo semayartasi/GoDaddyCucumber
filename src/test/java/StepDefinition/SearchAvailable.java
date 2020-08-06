@@ -1,13 +1,14 @@
 package StepDefinition;
 
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import utils.BaseStaticDriver;
+import utils.Driver;
 
-public class SearchAvailable extends BaseStaticDriver {
+public class SearchAvailable extends Driver {
+    WebDriver driver;
     @When("^search a domain name and click search button$")
     public void searchADomainNameAndClickSearchButton() {
     //send search keys
